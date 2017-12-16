@@ -1,24 +1,19 @@
-<?php
-
-// session_start();
-// $token = md5(time() . rand(1,100));
-// $_SESSION['token'] = $token;
-// <input type='hidden' name='token' value=' $token; '/>
-
-?>
-
 <form method="POST" action="submissions/create.php">
      <label>
        Name:<br>
-       <input type="name" name="subject">
+       <input name="name" type="text">
      </label>
      <label>
        Title:<br>
-       <textarea name="title"></textarea>
+       <input name="title" type="text">
      </label>
      <label>
        Abstract:<br>
        <textarea name="abstract"></textarea>
+     </label>
+     <label>
+       Contact (your email):<br>
+       <input name="email" type="email">
      </label>
      <br />
      <input type="submit" value="Submit">

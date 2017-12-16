@@ -2,15 +2,14 @@
 
 error_reporting(E_ALL ^ E_WARNING); 
 
-// if(empty($_POST['token']) || $_POST['token'] !== $_SESSION['token']){
-//   exit("Bad token!");
-// }
-// unset($_SESSION['token']);
-
-// var_dump($_POST);
-
 $serialized_data = json_encode($_POST);
 $notifications_recipient = 'pssl103brno@gmail.com';
+$mail_object = <<<EOT
+  name: {$_POST['name']}
+  title: {$_POST['title']}
+  email: {$_POST['email']}
+  abstract: {$_POST['abstract']}
+EOT;
 
 try {
   // Write the contents to the file,
@@ -20,16 +19,16 @@ try {
 
   // file_put_contents raises no exceptions on failure but it returns false
   if($success){
-    $mail_subject = "[PSSL103-OK] Successful submission";
-    mail($notifications_recipient, $mail_subject, $serialized_data);
+    $mail_subject = "[PSSL103-OK] Successful submission from ".$_POST['email'];
+    mail($notifications_recipient, $mail_subject, $mail_object);
     header("Location: success.php");
     die();
   } else {
     throw new Exception("file_put_contents unsuccessful");
   }
 } catch (Exception $e) {
-    $mail_subject = "[PSSL103-KO] Errorful submission: ".($e->getMessage());
-    mail($notifications_recipient, $mail_subject, $serialized_data);
+    $mail_subject = "[PSSL103-KO] Errorful submission from ".$_POST['email'].": ".($e->getMessage());
+    mail($notifications_recipient, $mail_subject, $mail_object);
     header("Location: failure.php");
     die();
 }
