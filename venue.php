@@ -1,27 +1,14 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
 <head>
 <link rel="stylesheet" type="text/css" href="sakura.css">
 </head>
 <body>
 
 <center>
-<div id="title">
-<h1><a href="PSSL103.html">PSSL 103 Brno</a></h1>
-</div>
-
-<div id="subtitle"> 
-<h2>103<sup>rd</sup> Peripatetic Seminar on Sheaves and Logic</h2>
-</div>
-
-<div id="header" style="text-align: center;">
-<h5>
-<a href="venue.html">Venue</a>  | 
-<a href="accommodation.html">Accommodation</a> | 
-<a href="participants.html">Participants</a> | 
-<a href="schedule.html">Schedule</a>
-</h5>
-</div>
+<?php include("title.html"); ?>
+<?php include("header.html"); ?>
 
 
 <h4>Coming to Brno</h4>

@@ -7,12 +7,12 @@
 <body>
 
 <center>
-<?php include("/includes/title.html");?>
-<?php include("includes/header.html");?>
+<?php include("title.html"); ?>
+<?php include("header.html"); ?>
 
 <div id="main" style="text-align: justify;"> 
-<!-- style="max-width: 40%;  -->
-The  103<sup>rd</sup>  Peripatetic Seminar on Sheaves and  Logic  (PSSL 103)  will be held on <b>April 6-8</b>  at <a href="https://www.math.muni.cz/">Masaryk  University</a>,  Brno (CZ).  Following the tradition of the PSSL, this is intended to  be an  informal meeting,  covering all areas of category theory and its applications. <i>Everybody is welcome to submit a proposal for a short seminar (approx 30 mins.); talks by PhD students and young researchers  are particularly encouraged.</i> <br><br>
+The  103<sup>rd</sup>  Peripatetic Seminar on Sheaves and  Logic  (PSSL 103)  will be held on <b>April 7-8</b>  at <a href="https://www.math.muni.cz/">Masaryk  University</a>,  Brno (CZ).  Following the tradition of the PSSL, this is intended to  be an  informal meeting,  covering all areas of category theory and its applications. <i>Everybody is welcome to submit a proposal for a short seminar (approx 30 mins.); talks by PhD students and young researchers  are particularly encouraged.</i> <br>
+&nbsp; A short <b>pre-PSSL</b> meeting will be held on the afternoon of April 6.<br><br>
 
 <div style="text-align:center">
 <img src="photo.jpg" width=75%>
@@ -29,7 +29,7 @@ To  register,  submit  a  proposal, and for further information  send  an  email
 
 <hr>
 
-<?php include("includes/footer.html"); ?>
+<?php include("footer.html"); ?>
 
 </center>
 </body>
