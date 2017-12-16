@@ -10,7 +10,7 @@ error_reporting(E_ALL ^ E_WARNING);
 // var_dump($_POST);
 
 $serialized_data = json_encode($_POST);
-$notifications_recipient = 'paolo.brasolin@gmail.com';
+$notifications_recipient = 'pssl103brno@gmail.com';
 
 try {
   // Write the contents to the file,
@@ -20,7 +20,7 @@ try {
 
   // file_put_contents raises no exceptions on failure but it returns false
   if($success){
-    $mail_subject = "Successful submission";
+    $mail_subject = "[PSSL103-OK] Successful submission";
     mail($notifications_recipient, $mail_subject, $serialized_data);
     header("Location: success.php");
     die();
@@ -28,7 +28,7 @@ try {
     throw new Exception("file_put_contents unsuccessful");
   }
 } catch (Exception $e) {
-    $mail_subject = "Errorful submission: ".($e->getMessage());
+    $mail_subject = "[PSSL103-KO] Errorful submission: ".($e->getMessage());
     mail($notifications_recipient, $mail_subject, $serialized_data);
     header("Location: failure.php");
     die();

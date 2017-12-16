@@ -7,20 +7,19 @@
 
 ?>
 
-<html>
-    <body>
-        <form method="POST" action="create.php">
-            <label>
-              Oggetto:
-              <input type="text" name="subject">
-            </label>
-            <br />
-            <label>
-              Testo:
-              <textarea name="body"></textarea>
-            </label>
-            <br />
-            <input type="submit" value="Submit">
-        </form>
-    </body>
-</html>
+<form method="POST" action="submissions/create.php">
+     <label>
+       Name:<br>
+       <input type="name" name="subject">
+     </label>
+     <label>
+       Title:<br>
+       <textarea name="title"></textarea>
+     </label>
+     <label>
+       Abstract:<br>
+       <textarea name="abstract"></textarea>
+     </label>
+     <br />
+     <input type="submit" value="Submit">
+ </form>

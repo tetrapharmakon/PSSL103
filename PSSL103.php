@@ -11,21 +11,18 @@
 <?php include("header.html"); ?>
 
 <div id="main" style="text-align: justify;"> 
-The  103<sup>rd</sup>  Peripatetic Seminar on Sheaves and  Logic  (PSSL 103)  will be held on <b>April 7-8</b>  at <a href="https://www.math.muni.cz/">Masaryk  University</a>,  Brno (CZ).  Following the tradition of the PSSL, this is intended to  be an  informal meeting,  covering all areas of category theory and its applications. <i>Everybody is welcome to submit a proposal for a short seminar (approx 30 mins.); talks by PhD students and young researchers  are particularly encouraged.</i> <br>
-&nbsp; A short <b>pre-PSSL</b> meeting will be held on the afternoon of April 6.<br><br>
+<p>The 103<sup>rd</sup> Peripatetic Seminar on Sheaves and Logic (PSSL 103) will be held on <b>April 7-8</b> at <a href="https://www.math.muni.cz/">Masaryk University</a>, Brno (CZ). Following the tradition of the PSSL, this is intended to be an informal meeting, covering all areas of category theory and its applications. <i>Everybody is welcome to submit a proposal for a short seminar (approx 30 mins.); talks by PhD students and young researchers  are particularly encouraged.</i> <br>
+&nbsp; A short <b>pre-PSSL</b> meeting will be held on the afternoon of April 6.</p>
 
-<div style="text-align:center">
+<div style="text-align:center" id="submit">
 <img src="photo.jpg" width=75%>
-</div><br>
-
-To  register,  submit  a  proposal, and for further information  send  an  email  to<br>
 </div>
+<p>To register, please fill the following form:<br />
 
-<div style="text-align:center">
-<h2>
-<a href="mailto:pssl103brno@gmail.com">pssl103brno@gmail.com</a>
-</h2>
-</div>
+<?php include("submissions/new.php"); ?>
+
+For further information, please email us at <a href="mailto:pssl103brno@gmail.com">pssl103brno@gmail.com</a>
+</p></div>
 
 <hr>
 
