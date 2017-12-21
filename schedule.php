@@ -11,7 +11,7 @@
 
 <div id="main" style="text-align: justify;"> 
 <!-- style="max-width: 40%;  -->
-The PSSL begins on Saturday; on Friday we will have introductory lectures ...
+<!-- The PSSL begins on Saturday; on Friday we will have introductory lectures ... -->
 <div id="timetable">
 <table>
   <tr>
