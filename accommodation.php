@@ -22,7 +22,9 @@
 
 <h4>Hotels</h4>
 <p style="max-width: 50%; text-align: center;">
-    <a href="">...</a><br>
+    <a href="https://www.continentalbrno.cz/?lang=en">Hotel Continental</a><br>
+    <a href="http://en.hostelmitte.com/">Hostel Cafe Mitte</a><br>
+    <a href="https://jacobbrno.cz/en/">Hostel Jacob</a><br>
 </p>
 <h4>Map of Brno</h4>
 </center>

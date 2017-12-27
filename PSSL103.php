@@ -15,7 +15,7 @@
 The 103<sup>rd</sup> Peripatetic Seminar on Sheaves and Logic (PSSL 103) will be held on <b>April 7-8</b> at <a href="https://www.math.muni.cz/">Masaryk University</a>, Brno (CZ). Following the tradition of the PSSL, this is intended to be an informal meeting, covering all areas of category theory and its applications. Talks by PhD students and young researchers are particularly encouraged!
 </p>
 
-<p>A short <b>pre-PSSL</b> meeting will be held on the afternoon of April 6.</p>
+<p>A short <b>pre-PSSL</b> meeting will be held on the afternoon of April 6. There will be talks by Moritz Groth and Simon Henry, on the theme of higher category theory.</p>
 
 <div style="text-align:center" id="submit">
 <img src="photo.jpg" width=75%>
@@ -24,7 +24,7 @@ The 103<sup>rd</sup> Peripatetic Seminar on Sheaves and Logic (PSSL 103) will be
 
 <?php include("submissions/new.php"); ?>
 
-For further information, please email us at <a href="mailto:pssl103brno@gmail.com">pssl103brno@gmail.com</a>
+For further information, and to register without giving a talk, please email us at <a href="mailto:pssl103brno@gmail.com">pssl103brno@gmail.com</a>. <b>The (non-strict) deadline for registration is March 9</b>.
 </p></div>
 
 <hr>
