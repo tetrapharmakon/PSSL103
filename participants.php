@@ -10,7 +10,14 @@
 <?php include("title.html"); ?>
 <?php include("header.html"); ?>
 
-Yet to come.
+<ol>
+	<li>Fosco Loregian</li>
+	<li>Ivan Di Liberti</li>
+	<li>John Bourke</li>
+	<li>Michael Lieberman</li>
+	<li>Moritz Groth</li>
+	<li>Simon Henry</li>
+</ol>
 
 <hr>
 
