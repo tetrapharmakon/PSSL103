@@ -52,7 +52,7 @@ usort($names, "sort_by_last_word");
 
 ?>
 
-<ul>
+<ul style="column-count:3; list-style:none;">
 <?php
 foreach ($names as &$name) {
     echo "<li>".$name."</li>";
