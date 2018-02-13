@@ -11,26 +11,53 @@
 <?php include("title.html"); ?>
 <?php include("header.html"); ?>
 
-<ul>
-	<li>Mathieu Anel</li>
-	<li>Peter Arndt</li>
-	<li>John Bourke</li>
-	<li>Ingo Blechschmidt</li>
-	<li>Ivan Di Liberti</li>
-	<li>Christian Espindola</li>
-	<li>Moritz Groth</li>
-	<li>Simon Henry</li>
-	<li>Eric Faber</li>
-	<li>Martti Karvonen</li>
-	<li>Micheal Lieberman</li>
-	<li>Fosco Loregian</li>
-	<li>Fernando Lucatelli Nuñes</li>
-	<li>Giuseppe Metere</li>
-	<li>François Renaud</li>
-	<li>Jiří Rosický</li>
-	<li>Pedro Zambrano</li>
+<?php
+$list = file('list.json') or die("Unable to open list.json!");
 
-	
+$names = array(
+	"Mathieu Anel",
+	"Peter Arndt",
+	"John Bourke",
+	"Ingo Blechschmidt",
+	"Ivan Di Liberti",
+	"Christian Espindola",
+	"Moritz Groth",
+	"Simon Henry",
+	"Eric Faber",
+	"Martti Karvonen",
+	"Micheal Lieberman",
+	"Fosco Loregian",
+    // "Fernando Lucatelli Nuñes",
+	"Giuseppe Metere",
+	"François Renaud",
+	"Jiří Rosický",
+	"Pedro Zambrano"
+);
+
+foreach ($list as &$entry) {
+    array_push($names, json_decode($entry)->{'name'});
+}
+
+$names = array_unique($names);
+
+function sort_by_last_word($a, $b) {
+    $words_a = explode(' ', $a);
+    $words_b = explode(' ', $b);
+    $last_a = array_pop($words_a);
+    $last_b = array_pop($words_b);
+    return strcmp($last_a, $last_b);
+}
+
+usort($names, "sort_by_last_word");
+
+?>
+
+<ul>
+<?php
+foreach ($names as &$name) {
+    echo "<li>".$name."</li>";
+}
+?>
 </ul>
 <hr>
 
