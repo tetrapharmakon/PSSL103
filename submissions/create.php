@@ -9,6 +9,8 @@ $mail_object = <<<EOT
   title: {$_POST['title']}
   email: {$_POST['email']}
   abstract: {$_POST['abstract']}
+  arrival: {$_POST['arrival']}
+  departure: {$_POST['departure']}
 EOT;
 
 try {

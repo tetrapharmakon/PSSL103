@@ -15,12 +15,17 @@
 <div id="timetable">
 <table>
   <tr>
-    <th>Pre-PSSL</th>
+    <th>pre-PSSL</th>
   </tr>
   <tr>
-    <td width="20%">time</td>
-    <td width="60%"><a href="abstracts/speaker.pdf">title</a></td>
-    <td width="20%">speaker</td>
+    <td width="15%">time</td>
+    <td width="50%"><a href="abstracts/speaker.pdf">title</a></td>
+    <td width="35%">M. Groth</td>
+  </tr>
+  <tr>
+    <td width="15%">time</td>
+    <td width="50%"><a href="abstracts/speaker.pdf">title</a></td>
+    <td width="35%">S. Henry</td>
   </tr>
   <tr>
     <th>Saturday</th>

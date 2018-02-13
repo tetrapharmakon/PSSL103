@@ -10,7 +10,7 @@
 <?php include("../title.html"); ?>
 <?php include("../header.html"); ?>
 
-&#10004; Your submission has been registered! We look forward to welcome you in Brno.
+&#10004; Your submission has been registered!<br> We look forward to welcome you in Brno.
 
 <hr>
 
